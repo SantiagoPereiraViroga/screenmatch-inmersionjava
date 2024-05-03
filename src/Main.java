@@ -5,44 +5,48 @@ public class Main {
         System.out.println("Welcome to the Java Immersion");
         //System.out.println("Matrix movie");
 
-        //Declaracion de variables
+        //Declaring variables
         int releaseDate = 1999;
-        double evaluacion = 4.5;
-        boolean incluidoEnElPlanBasico = true;
-        String nombreDePelicula = "Matrix";
-        String sinopsis = """
+        double rating = 4.5;
+        boolean includedInBasicPlan = true;
+        String nameOfTheMovie = "Matrix";
+        String synopsis = """
                 
-                La mejor pelicula de fin de milenio.
-                Neo descubrira el secreto detras de todo
-                aquello que juraba ser verdadero.
+                The best movie of the end of the millennium.
+                Neo discovers the secret behind everything
+                he swore to be true.
+                
                 """;
-        double mediaNotaMatrix = 0;
 
-        System.out.println("Nombre de pelicula: " + nombreDePelicula);
-        System.out.println("Sinopsis: " + sinopsis);
-        System.out.println("Fecha de lanzamiento: " + releaseDate);
-        System.out.println("Rating: " + evaluacion);
-        System.out.println("¿Se incluye en el plan basico? " + incluidoEnElPlanBasico);
+        double averageRatingMatrix = 0;
 
-        double mediaEvaluacion = (4.5 + 4.8 + 3) / 3;
-        System.out.println("Media de la evaluacion de Matrix: " + mediaEvaluacion);
+        System.out.println("Name of the movie: " + nameOfTheMovie);
+        System.out.println("Synopsis: " + synopsis);
+        System.out.println("Release date: " + releaseDate);
+        System.out.println("Rating: " + rating);
+        System.out.println("Is it included on the Basic Plan? " + includedInBasicPlan);
+
+        double averageRating = (4.5 + 4.8 + 3) / 3;
+        System.out.println("Average movie rating: " + averageRating);
 
         if (releaseDate >= 2023) {
-            System.out.println("This is movie is hot right now");
+            System.out.println("This movie is on fire right now");
         }
         else{
             System.out.println("This is an old gem you must watch");
         }
 
-        for (int i = 0; i < 3; i++) {
+        int counter = 0;
+        while (counter < 3) {
 
             Scanner keyboard = new Scanner(System.in);
-            System.out.println("Ingresa la nota que le darías a Matrix: ");
-            double notaMatrix = keyboard.nextDouble();
-            mediaNotaMatrix = mediaNotaMatrix + notaMatrix;
+            System.out.println("Enter a rating for Matrix: ");
+            double ratingMatrix = keyboard.nextDouble();
+            averageRatingMatrix = averageRatingMatrix + ratingMatrix;
+            counter++;
         }
 
-        System.out.println("La media de la pelicula" +
-                "Matrix calculada es: " + mediaNotaMatrix / 3);
+        System.out.println("The average rating for " +
+                "Matrix is: " + averageRatingMatrix / 3);
     }
 }
