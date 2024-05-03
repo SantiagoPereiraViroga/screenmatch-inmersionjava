@@ -3,20 +3,21 @@
 
 <br>
 
-[!WARNING]
+**WARNING!**
 <p>
 	This project is merely demonstrative and has educational purposes only.
 </p>
 
 <br>
-####Introduction
+
+#### Introduction
 <p>
 This project is intended as an example of the description and common details of a film in what would be an online platform for films and series.
 </p>
 
 <br>
 
-####Functions
+#### Functions
 
 <ul>
 	<li>To print relevant information about a movie on the screen</li>
