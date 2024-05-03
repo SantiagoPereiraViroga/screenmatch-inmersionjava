@@ -3,10 +3,7 @@
 
 <br>
 
-**WARNING!**
-<p>
-	This project is merely demonstrative and has educational purposes only.
-</p>
+	WARNING: This project is merely demonstrative and has educational purposes only.
 
 <br>
 
