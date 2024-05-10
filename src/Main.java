@@ -29,7 +29,7 @@ public class Main {
         double averageRating = (4.5 + 4.8 + 3) / 3;
         System.out.println("Average movie rating: " + averageRating);
 
-        if (releaseDate >= 2023 && releaseDate >= 2024) {
+        if (releaseDate >= 2023 && releaseDate <= 2024) {
             System.out.println("This movie is on fire right now");
         }
         else{
